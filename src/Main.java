@@ -22,6 +22,8 @@ public class Main {
         List<String> blurImagesWithSharpness7x7 = new Images().blurImagesWithSharpness7x7();
         List<String> blurImagesWithSharpness9x9 = new Images().blurImagesWithSharpness9x9();
 
+
+        // FUI TROCANDO DE LISTA E DE FUNÇÃO PARA CRIAR TODAS AS IMAGENS COM TODOS OS KERNELS NAS QUESTÕES 1, 2, 3, 4, 5
         for (int i = 0; i < 5; i++) {
             convulationClass.convolution(blurImagesPaths.get(i), filters9x9.gaussiano, String.format("C:\\Users\\princ\\OneDrive\\Documentos\\4º Período - Ccompt\\P. de imagens e V. computacional\\digital_image_processing_report\\src\\assets\\questionFive\\kernel9x9\\gaussianFilter\\gaussian_image_filtered%d.png", i + 1));
         }
